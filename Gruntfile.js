@@ -16,9 +16,17 @@ module.exports = function(grunt) {
         }
       }
     },
+
+
+    watch: {
+      files: ['<%= jshint.files %>'],
+      tasks: ['jshint']
+    }
+
   });
 
 
   // load plugins
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 };
