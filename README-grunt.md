@@ -32,7 +32,7 @@ Setup a basic grunt workflow
 5. run `grunt jshint` to check the files again and see the warnings
 6. undo the changes you made to js/app.js (you can do this with git)
 7. install the watch task plugin to automatically check files when you save: `npm install --save-dev grunt-contrib-watch` 
-8. update [Gruntfile.js]() to use the watch plugin
+8. add the watch task plugin to [Gruntfile.js](https://github.com/bboyle/hot-or-cold-starter/blob/dc885154e7413f05244afc37a455e7fc3a234430/Gruntfile.js)
 9. run `grunt watch`
 10. edit the js/app.js file and type in some random text and save your changes
 11. see how watch automatically ran jshint and reporting the warnings
