@@ -26,4 +26,4 @@ Setup your grunt workflow
 -------------------------
 
 1. install the jshint plugin to check javascript files: `npm install --save-dev grunt-contrib-jshint`
-2. create a new file named 'Gruntfile.js' using this code:
+2. create a new file named [Gruntfile.js](https://github.com/bboyle/hot-or-cold-starter/blob/da6827d8e7f745c1dbf99ff8235ce91d2f00a0e0/Gruntfile.js)
