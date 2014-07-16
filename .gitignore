@@ -1,0 +1,7 @@
+# This repository does not keep a copy of packages used in the grunt build.
+# Use the command `npm install` to install the modules listed in package.json
+node_modules/
+
+# Sometimes this is not the best practice.
+# Learn more: http://addyosmani.com/blog/checking-in-front-end-dependencies/
+# (The article is about bower, but the same principles apply to all packages)
