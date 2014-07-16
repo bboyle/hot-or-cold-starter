@@ -21,3 +21,9 @@ Setup your project work area
   4. review the 'node_modules' folder that was created to store package files installed with npm
 3. install local grunt for this project: `npm install --save-dev grunt`
   1. review package.json and see the new `devDependencies` listed
+
+Setup your grunt workflow
+-------------------------
+
+1. install the jshint plugin to check javascript files: `npm install --save-dev grunt-contrib-jshint`
+2. create a new file named 'Gruntfile.js' using this code:
