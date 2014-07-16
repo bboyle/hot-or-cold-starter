@@ -37,3 +37,24 @@ Setup a basic grunt workflow
 10. edit the js/app.js file and type in some random text and save your changes
 11. see how watch automatically ran jshint and reporting the warnings
 12. undo the changes you made to js/app.js (you can do this with git)
+
+What's next?
+------------
+
+There are many more grunt plugins to handle common tasks:
+
+- formatting code so it is nicely indented and easy to read (look for 'beautify')
+- validate html
+- testing code
+- minifying code for production use ('uglify', 'minify')
+
+Try them out! Remember each time you need to edit Gruntfile.js to:
+
+1. add the configuration options for the task
+2. load the plugin: `grunt.loadNpmTasks('PLUGIN_NAME')`
+
+You can also register your own tasks to run multiple tasks in order, and set a default task.
+A default task that checks the code and then starts grunt watch is handy…
+Next time you want to code, sit down, type `grunt` and you're off!
+
+Happy grunting :)

@@ -18,9 +18,16 @@ module.exports = function(grunt) {
     },
 
 
+    // https://github.com/vkadam/grunt-jsbeautifier
+    jsbeautifier: {
+      files: ["js/**/*.js"],
+      options: {}
+    },
+
+
     watch: {
       files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      tasks: ['jsbeautifier','jshint']
     }
 
   });
@@ -28,5 +35,10 @@ module.exports = function(grunt) {
 
   // load plugins
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jsbeautifier');
   grunt.loadNpmTasks('grunt-contrib-watch');
+
+
+  grunt.registerTask('test', ['jsbeautifier','jshint']);
+  grunt.registerTask('default', ['test', 'watch']);
 };
